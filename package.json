@@ -1,0 +1,14 @@
+{
+  "name": "micro-frontends-demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+  	"start": "yarn start-server & yarn run-app-one & yarn run-app-two",
+  	"start-server": "cd mf-server && PORT=3000 node index.js && cd ../",
+	"run-app-one": "PORT=3001 PUBLIC_URL='mf-one' yarn --cwd './app-one' start",
+	"run-app-two": "PORT=3002 PUBLIC_URL='mf-two' yarn --cwd './app-two' start"
+	},
+  "repository": "https://github.com/MaheshKonne/micro-frontends-demo.git",
+  "author": "Mahesh Konne <maheshkonneiiitb@gmail.com>",
+  "license": "MIT"
+}
