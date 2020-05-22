@@ -13,7 +13,7 @@ ReactDOM.render(
   <React.StrictMode>
     <Router>
       <Switch>
-        <Route path="/mf-one/one">
+        <Route path="/mf-one">
           <App />
         </Route>
       </Switch>
